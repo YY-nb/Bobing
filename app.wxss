@@ -14,18 +14,23 @@ page{
 } 
 .background{
   height: 1060rpx;
+  
 }
 .homeIcon{
   width: 100rpx;
   height: 110rpx;
+  
   
 }
 .historyIcon{
   width: 100rpx;
   height:110rpx;
   
+  
 }
 .myHomeIcon{
   width: 100rpx;
   height:110rpx;
+  
+  
 }
