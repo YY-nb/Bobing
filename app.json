@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/myInfo/myInfo",
+    "pages/singleGame/singleGame"
   ],
   "window":{
     "backgroundTextStyle":"light",
