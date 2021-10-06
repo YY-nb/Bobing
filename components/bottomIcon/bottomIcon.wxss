@@ -1,19 +1,19 @@
 /* components/bottomIcon/bottomIcon.wxss */
+.bottomIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .homeIcon{
     width: 100rpx;
-    height: 110rpx;
-    
-    
+    height: 110rpx;  
   }
   .historyIcon{
     width: 100rpx;
-    height:110rpx;
-    
-    
+    height:110rpx;  
   }
   .myHomeIcon{
     width: 100rpx;
-    height:110rpx;
-    
-    
+    height:110rpx; 
   }

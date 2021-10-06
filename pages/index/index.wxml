@@ -1,6 +1,5 @@
 <!--index.wxml-->
 <view class="indexContainer">
- <image class="background" src="/static/image/background.png"></image>
-<bottomIcon/>
-  
+ <image class="background" src="/static/image/background.png"></image> 
 </view>
+<bottomIcon/>
