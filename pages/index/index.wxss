@@ -5,7 +5,13 @@
   align-items: center;
   height: 100%;
 }
-
+.background{
+  height: 1080rpx;
+}
+.homeIcon{
+  width: 100rpx;
+  height: 100rpx;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
