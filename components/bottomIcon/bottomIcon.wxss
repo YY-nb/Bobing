@@ -1,0 +1,19 @@
+/* components/bottomIcon/bottomIcon.wxss */
+.homeIcon{
+    width: 100rpx;
+    height: 110rpx;
+    
+    
+  }
+  .historyIcon{
+    width: 100rpx;
+    height:110rpx;
+    
+    
+  }
+  .myHomeIcon{
+    width: 100rpx;
+    height:110rpx;
+    
+    
+  }

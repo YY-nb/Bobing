@@ -1,0 +1,6 @@
+<!--components/bottomIcon/bottomIcon.wxml-->
+<view class="bottomIcon">
+    <image class="homeIcon" catchtap="toHome" src="/static/image/home_icon.png"></image>
+    <image class="historyIcon" src="/static/image/history_icon.png"></image>
+    <image class="myHomeIcon" catchtap="toMyInfo" src="/static/image/myhome_icon.png"></image>
+</view>

@@ -32,15 +32,6 @@ Page({
       url: '/pages/singleGame/singleGame',
     })
   },
-  toMyInfo(){
-    wx.navigateTo({
-      url: '/pages/myInfo/myInfo',
-    })
-  },
-  toHome(){
-    wx.navigateTo({
-      url: '/pages/index/index',
-    })
-  }
+  
   
 })
