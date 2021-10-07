@@ -14,5 +14,12 @@ page{
 } 
 .background{
   height: 1060rpx;
+  position: relative;
+  
+}
+.ruleText{
+  width: 60rpx;
+  height:60rpx;
+  position: absolute;
   
 }
