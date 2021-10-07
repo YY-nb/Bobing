@@ -32,6 +32,10 @@ Page({
       url: '/pages/singleGame/singleGame',
     })
   },
-  
+  toBobingHall(){
+    wx.navigateTo({
+      url: '/pages/bobingHall/bobingHall',
+    })
+  }
   
 })

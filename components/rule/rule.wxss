@@ -6,7 +6,7 @@
     height:80rpx;
     left: 87%;
     position: absolute;
-    z-index: 1;
+    
   }
   .ruleIcon image{
     

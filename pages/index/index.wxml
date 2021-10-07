@@ -1,12 +1,13 @@
 <!--index.wxml-->
 <view class="container">
-
- <image class="background" src="/static/image/background.png"></image> 
+    <image class="background" src="/static/image/background.png"></image> 
  <!---->
- <image class="singleGame" src="/static/image/sbkkp12.png" catchtap="toSingleGame"></image>
-<checkRule/>
-
+ 
+    <checkRule/>
+    <image class="bobingHall" src="/static/image/Bobing_Room.png" catchtap="toBobingHall"></image>
+    <image class="singleGame" src="/static/image/Personal_Bobing123.png" catchtap="toSingleGame"></image>
 </view>
 <!--底下三个选项-->
 <bottomIcon/>
+
 
