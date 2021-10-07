@@ -24,7 +24,9 @@ Component({
             })
           },
           toHome(){
-            wx.navigateTo({
+            wx.redirectTo({
+              url: 'url',
+            })({
               url: '/pages/index/index',
             })
           }
