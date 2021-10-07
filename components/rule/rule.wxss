@@ -1,1 +1,17 @@
 /* pages/rule/rule.wxss */
+.ruleIcon{
+    display: flex;
+    flex-direction: column;
+    width: 80rpx;
+    height:80rpx;
+    position: absolute;
+    z-index: 2;
+  }
+  .ruleIcon image{
+    width: 50rpx;
+    height:50rpx;
+  }
+  .ruleIcon text{
+    font-size: 19rpx;
+    text-align: center;
+  }

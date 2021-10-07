@@ -1,6 +1,14 @@
 <!--index.wxml-->
 <view class="indexContainer">
+
  <image class="background" src="/static/image/background.png"></image> 
- <image class="ruleText" src="/static/image/ruleText.png"></image>
+ <!--
+ <view class="ruleIcon">
+    <image  src="/static/image/ruleText.png"></image>
+    <text >查看规则</text>
+</view>
+-->
+<checkRule/>
+
 </view>
 <bottomIcon/>

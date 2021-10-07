@@ -1,7 +1,7 @@
 /**app.wxss**/
 page{
   height: 100%;
- 
+  width: 100%;
 }
 .container {
   height: 100%;
@@ -13,13 +13,27 @@ page{
   box-sizing: border-box;
 } 
 .background{
-  height: 1060rpx;
-  position: relative;
-  
-}
-.ruleText{
-  width: 60rpx;
-  height:60rpx;
+  display: flex;
+  box-sizing: border-box;
+  height: 1100rpx;
+  width: 750rpx;
   position: absolute;
-  
+  z-index: 1;
 }
+/*
+.ruleIcon{
+  display: flex;
+  flex-direction: column;
+  width: 80rpx;
+  height:80rpx;
+  position: absolute;
+}
+.ruleIcon image{
+  width: 50rpx;
+  height:50rpx;
+}
+.ruleIcon text{
+  font-size: 19rpx;
+  text-align: center;
+}
+*/
