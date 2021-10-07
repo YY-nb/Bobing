@@ -4,10 +4,12 @@
     flex-direction: column;
     width: 80rpx;
     height:80rpx;
+    left: 87%;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
   }
   .ruleIcon image{
+    
     width: 50rpx;
     height:50rpx;
   }

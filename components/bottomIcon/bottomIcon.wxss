@@ -2,30 +2,30 @@
 .bottomIcon{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center;   
     justify-content: space-evenly;
-    position: fixed;
+    position: absolute;
     bottom: 0;
+    top:90%;
     z-index: 1;
+    width: 100%;
+    background: white;
 }
 .homeIcon{
     display: flex;
     width: 100rpx;
     height: 110rpx;  
     
-    
   }
   .historyIcon{
     width: 100rpx;
     height:110rpx;  
     display: flex;
-    
+
     
   }
   .myHomeIcon{
     width: 100rpx;
     height:110rpx; 
-    display: flex;
-    
-    
+    display: flex; 
   }

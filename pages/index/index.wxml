@@ -1,14 +1,12 @@
 <!--index.wxml-->
-<view class="indexContainer">
+<view class="container">
 
  <image class="background" src="/static/image/background.png"></image> 
- <!--
- <view class="ruleIcon">
-    <image  src="/static/image/ruleText.png"></image>
-    <text >查看规则</text>
-</view>
--->
+ <!---->
+ <image class="singleGame" src="/static/image/sbkkp12.png" catchtap="toSingleGame"></image>
 <checkRule/>
 
 </view>
+<!--底下三个选项-->
 <bottomIcon/>
+
