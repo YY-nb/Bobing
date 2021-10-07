@@ -25,8 +25,6 @@ Component({
           },
           toHome(){
             wx.redirectTo({
-              url: 'url',
-            })({
               url: '/pages/index/index',
             })
           }

@@ -1,2 +1,5 @@
 <!--pages/myInfo/myInfo.wxml-->
-<text>pages/myInfo/myInfo.wxml</text>
+<view class="container">
+    <image class="background" src="/static/image/background.png"></image> 
+</view>
+<bottomIcon/>

@@ -1,4 +1,7 @@
 {
     "component": true,
-    "usingComponents": {}
+    
+    "usingComponents": {
+        "bottomIcon":"/components/bottomIcon/bottomIcon"
+      }
 }
