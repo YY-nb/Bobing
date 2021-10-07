@@ -6,7 +6,7 @@
   align-items: center;
   color: #aaa;
 }
-
+/*ssffs*/
 .userinfo-avatar {
   overflow: hidden;
   width: 128rpx;
