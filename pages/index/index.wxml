@@ -4,8 +4,9 @@
  <!---->
  
     <checkRule/>
-    <image class="bobingHall" src="/static/image/Bobing_Room.png" catchtap="toBobingHall"></image>
-    <image class="singleGame" src="/static/image/Personal_Bobing123.png" catchtap="toSingleGame"></image>
+    <image class="bobingHall" src="/static/image/Bobing_Lobby.png" catchtap="toBobingHall"></image>
+    <image class="createRoom" src="/static/image/PrivateRoom_Create123.png" catchtap="toCreateRoom"></image>
+    <image class="singleGame" src="/static/image/Off-Line_Bobing123.png" catchtap="toSingleGame"></image>
 </view>
 <!--底下三个选项-->
 <bottomIcon/>

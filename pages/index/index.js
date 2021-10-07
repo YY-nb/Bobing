@@ -36,6 +36,11 @@ Page({
     wx.navigateTo({
       url: '/pages/bobingHall/bobingHall',
     })
+  },
+  toCreateRoom(){
+    wx.navigateTo({
+      url: '/pages/createRoom/createRoom',
+    })
   }
   
 })

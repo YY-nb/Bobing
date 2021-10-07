@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/myInfo/myInfo",
-    "pages/singleGame/singleGame"
+    "pages/singleGame/singleGame",
+    "pages/bobingHall/bobingHall",
+    "pages/createRoom/createRoom"
   ],
   "window":{
     "backgroundTextStyle":"light",

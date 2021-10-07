@@ -1,1 +1,6 @@
 /* pages/singleGame/singleGame.wxss */
+.bobingBowl{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}

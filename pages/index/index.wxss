@@ -26,10 +26,18 @@
   top:30%;
   left: 15%;
 }
+.createRoom{
+  display: flex;
+  position: absolute;
+  height: 110rpx;
+  width: 250rpx;
+  top:30%;
+  left: 58%;
+}
 .singleGame{
   display: flex;
   position: absolute;
-  height: 125rpx;
+  height: 110rpx;
   width: 250rpx;
   top:45%;
   left: 58%;
