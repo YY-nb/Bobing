@@ -2,6 +2,7 @@
 <view class="container">
     <image class="background" src="/static/image/background.png"></image>
     <image class="bobingBowl" src="/static/image/bobingPic.png" ></image>
+    <checkRule/>
 </view>
 
 <bottomIcon/>
