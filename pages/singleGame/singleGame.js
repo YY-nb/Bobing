@@ -12,7 +12,8 @@ Component({
      * 组件的初始数据
      */
     data: {
-        resultList:[], //博饼后所有骰子的结果
+        resultList:[0,0,0,0,0,0,0], //博饼后所有骰子的结果，如[0]代表点数1有几个
+        displayList:[6], //存放最后显示的图片
         rank:"", //骰子判定结果
         dices:[
             "/static/image/diceGif.gif",
@@ -25,7 +26,8 @@ Component({
         ], //存储图片路径
         bowlPicture:"/static/image/bobingPic.png", //碗的路径
         animation:"", //gif
-        buttonText:"博"
+        buttonText:"博",
+        isBobingOver:false
     },
 
     /**
@@ -43,16 +45,114 @@ Component({
                 })
             }
             else{
+                this.showRank();
                 this.setData({
                     buttonText:"博",
                     animation:"",
-                    bowlPicture:"/static/image/bobingPic.png"
+                    bowlPicture:"/static/image/bobingPic.png",
+                    resultList:[0,0,0,0,0,0,0]
+                })
+                
+            }  
+        },
+        randomList(){
+            var tempList=[];
+            for(var i=0;i<6;i++){
+                var num=Math.floor(Math.random() * 6) + 1; //随机1~6
+                this.data.resultList[num]++;
+                switch(num){
+                    case 1:
+                        tempList.push(this.data.dices[1]);
+                        break;
+                    case 2:
+                        tempList.push(this.data.dices[2]);
+                        break;  
+                    case 3:
+                        tempList.push(this.data.dices[3]);
+                        break;       
+                    case 4:
+                        tempList.push(this.data.dices[4]);
+                        break; 
+                    case 5:
+                        tempList.push(this.data.dices[5]);
+                        break; 
+                    case 6:
+                        tempList.push(this.data.dices[6]);
+                        break; 
+                }
+            }
+            this.setData({
+                displayList:tempList
+            })
+        },
+        showRank(){
+            this.randomList();
+            if(this.data.resultList[4]==3&&this.data.resultList[2]==2){
+                this.setData({
+                    rank:"状元：状元插金花"
                 })
             }
+            else if(this.data.resultList[4]==6){
+                this.setData({
+                    rank:"状元：六杯红"
+                })
+            }
+            else if(this.data.resultList[1]==6){
+                this.setData({
+                    rank:"状元：遍地棉"
+                })
+            }
+            else if(this.data.resultList[4]==5){
+                this.setData({
+                    rank:"状元：五红"
+                })
+            }
+            else if(this.data.resultList[2]==5){
+                this.setData({
+                    rank:"状元：五子连科"
+                })
+            }
+            else if(this.data.resultList[4]==4){
+                this.setData({
+                    rank:"状元：四红"
+                })
+            }
+            else if(this.data.resultList[1]==1&&this.data.resultList[2]==1
+                &&this.data.resultList[3]==1&&this.data.resultList[4]==1
+                &&this.data.resultList[5]==1&&this.data.resultList[6]==1){
+                    this.setData({
+                        rank:"榜眼：对堂"
+                    })
+                }
+            else if(this.data.resultList[4]==3){
+                this.setData({
+                    rank:"探花：三红"
+                })
+            }    
+            else if(this.data.resultList[2]==4){
+                this.setData({
+                    rank:"进士：四进"
+                })
+            }
+            else if(this.data.resultList[4]==2){
+                this.setData({
+                    rank:"举人：二举"
+                })
+            }
+            else if(this.data.resultList[4]==1){
+                this.setData({
+                    rank:"秀才：一秀"
+                })
+            }
+            else{
+                this.setData({
+                    rank:"再接再厉"
+                })
+            }
+            console.log(this.data.rank);
+            console.log(this.data.resultList);
             
-
             
-        },
-
+        }
     }
 })

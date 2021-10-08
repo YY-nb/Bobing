@@ -19,3 +19,13 @@
     width: 230px;   
     top: 71%;
 }
+.diceList{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    top:20%;
+}
+.diceList image{
+    height: 70rpx;
+    width: 70rpx;
+}
