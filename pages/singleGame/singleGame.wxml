@@ -1,7 +1,9 @@
 <!--pages/singleGame/singleGame.wxml-->
 <view class="container">
     <image class="background" src="/static/image/background.png"></image>
-    <image class="bobingBowl" src="/static/image/bobingPic.png" ></image>
+    <button class="pressButton" catchtap="click" >{{buttonText}}</button>
+    <image class="diceAnimation" src="{{animation}}"></image>
+    <image class="bobingBowl" src="{{bowlPicture}}" ></image>
     <checkRule/>
 </view>
 
