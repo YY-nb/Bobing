@@ -1,0 +1,5 @@
+<!--pages/history/history.wxml-->
+<view class="container">
+    <image class="background" src="/static/image/background.png"></image> 
+</view>
+<bottomIcon/>

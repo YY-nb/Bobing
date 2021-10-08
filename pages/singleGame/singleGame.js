@@ -41,7 +41,8 @@ Component({
                 this.setData({
                     buttonText:"停",
                     animation:this.data.dices[0],
-                    bowlPicture:""
+                    bowlPicture:"",
+                    displayList:[0,0,0,0,0,0]
                 })
             }
             else{

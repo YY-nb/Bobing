@@ -1,6 +1,15 @@
 <!--pages/createRoom/createRoom.wxml-->
 
 <view class="container">
+    <create class="searchBar"/>
+    <view class="wj">
+        <text>请输入玩家数量</text>
+    </view>
+
+<view class="sbBar">
+<text>确    认</text>
+</view>
     <image class="background" src="/static/image/background.png"></image> 
 </view>
+
 <bottomIcon/>
