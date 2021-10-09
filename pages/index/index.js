@@ -29,6 +29,7 @@ Page({
     wx.navigateTo({
       url: '/pages/enterSingleGame/enterSingleGame',
     })
+    wx.clearStorageSync();
   },
   toBobingHall(){
     wx.navigateTo({

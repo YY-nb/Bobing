@@ -25,6 +25,7 @@ Page({
         nextButton:""
     },
         onLoad(){
+           results=[];
            let num=wx.getStorageSync('playerNum');
            if(num){
             this.setData({
@@ -189,7 +190,7 @@ Page({
             wx.reLaunch({
                 url: '/pages/index/index',
               })
-            wx.clearStorageSync();
+            
         }
     
 })
