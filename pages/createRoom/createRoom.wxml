@@ -1,12 +1,11 @@
 <!--pages/createRoom/createRoom.wxml-->
 
 <view class="container">
-    <create class="searchBar"/>
-    <view class="wj">
-        <text>请输入玩家数量</text>
-    </view>
+    <create class="searchBar1" placeholder-style="font-size:15px" placeholder="请输入房间名称"/>
+    <create class="searchBar2" placeholder-style="font-size:15px" placeholder="请输入房间密码"/>
 
-<view class="sbBar">
+
+<view class="sbBar" catchtap="toWaitingRoom">
 <text>确    认</text>
 </view>
     <image class="background" src="/static/image/background.png"></image> 

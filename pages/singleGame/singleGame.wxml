@@ -1,17 +1,27 @@
 <!--pages/singleGame/singleGame.wxml-->
 <view class="container"> 
     <image class="background" src="/static/image/background.png"></image>
-    <button class="pressButton" catchtap="click" >{{buttonText}}</button>
+    <button wx:if="{{isBobingOver==false}}" class="pressButton" catchtap="startClick" >{{buttonText}}</button>
     <image class="diceAnimation" src="{{animation}}"></image>
     <image class="bobingBowl" src="{{bowlPicture}}" ></image>
     <!--显示名次-->
-    <view class="rank" >
-        <text>{{rank}}</text>
-    </view>
-    <view class="diceList">
-        <image  wx:for="{{displayList}}" src="{{item}}"></image>
-    </view>
-    
+    <block wx:if="{{isBobingOver==true}}">
+        <view class="rank" >
+         <text>{{rank}}</text>
+        </view>
+        <view class="diceList">
+            <image  wx:for="{{displayList}}" src="{{item}}"></image>
+        </view>
+        <button wx:if="{{currentNum>1}}" class="continue" catchtap="continueClick">
+            <text>继续</text>    
+        </button>
+        <button wx:elif="{{currentNum==1}}" class="newGame" catchtap="newClick">
+            <text>新的一局</text>
+        </button>
+        <button class="return" catchtap="returnBack">
+            <text>退出</text>
+        </button>
+    </block>
     <!--查看规则图标-->
     <checkRule/>
 </view>

@@ -1,5 +1,7 @@
 // pages/singleGame/singleGame.js
 var clickTime=0;
+var playerNum=2;
+var currentPlayerNum=playerNum;
 Component({
     /**
      * 组件的属性列表
@@ -27,27 +29,33 @@ Component({
         bowlPicture:"/static/image/bobingPic.png", //碗的路径
         animation:"", //gif
         buttonText:"博",
-        isBobingOver:false
+        isBobingOver:false,
+        currentNum: playerNum,
+        nextButton:""
     },
 
     /**
      * 组件的方法列表
      */
     methods: {
-        click(){
+        startClick(){
+           
             clickTime%=2;
             clickTime++;
-            if(clickTime%2==1){
+            if(clickTime%2==1){                
                 this.setData({
                     buttonText:"停",
                     animation:this.data.dices[0],
                     bowlPicture:"",
-                    displayList:[0,0,0,0,0,0]
+                  //  rank:"",
+                  //  displayList:[0,0,0,0,0,0]
                 })
             }
-            else{
+            else{ //博完
+                currentPlayerNum--;
                 this.showRank();
                 this.setData({
+                    isBobingOver:true,
                     buttonText:"博",
                     animation:"",
                     bowlPicture:"/static/image/bobingPic.png",
@@ -147,13 +155,33 @@ Component({
             }
             else{
                 this.setData({
-                    rank:"再接再厉"
+                    rank:"再接再厉~"
                 })
             }
             console.log(this.data.rank);
             console.log(this.data.resultList);
             
             
+        },
+        continueClick(){
+             this.setData({
+                 isBobingOver:false,
+                 currentNum:currentPlayerNum
+            })
+            console.log(this.data.currentNum);       
+        },
+        newClick(){ 
+            this.setData({
+                 isBobingOver:false,
+                 currentNum:playerNum
+            })
+            currentPlayerNum=playerNum;
+            console.log(this.data.currentNum);        
+        },
+        returnBack(){
+            wx.reLaunch({
+                url: '/pages/index/index',
+              })
         }
     }
 })

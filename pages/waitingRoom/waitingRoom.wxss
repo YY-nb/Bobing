@@ -1,0 +1,28 @@
+/* pages/waitingRoom/waitingRoom.wxss */
+.waitingIcon {
+  display: flex;
+  position: absolute;
+  width: 750rpx;
+  height: 600rpx;
+  top:30%;
+  
+}
+
+.waitingIcon text {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 750rpx;
+  height: 150rpx;
+  left: 33.5%;
+  top: 30%;
+}
+
+.waitingIcon image {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 200rpx;
+  height: 200rpx;
+  left: 37%;
+}

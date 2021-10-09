@@ -1,0 +1,9 @@
+<!--pages/waitingRoom/waitingRoom.wxml-->
+<view class="waitingIcon">
+<image src="/static/image/loading.gif"></image>
+<text>正在等待用户加入</text>
+</view>
+<view class="container">   
+   <image class="background" src="/static/image/background.png"></image> 
+</view>
+<bottomIcon/>
