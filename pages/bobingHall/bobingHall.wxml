@@ -1,5 +1,30 @@
 <!--pages/bobingHall/bobingHall.wxml-->
 <view class="container">
     <image class="background" src="/static/image/background.png"></image> 
+
+    <view class="searchBar1">
+        <input placeholder-style="font-size:18px" placeholder="请输入房间号加入房间" bindinput="bindKeyInput"/>
+        <image src="/static/image/Go.png" catchtap="toPassword"></image>
+    </view>
+
+    <view class="sbBar2">
+    <image src="/static/image/Room1.png"></image>
+    <text catchtap="toPassword">绝绝子的房间</text>
+    </view>
+
+    <view class="sbBar3">
+    <image src="/static/image/Room2.png"></image>
+    <text catchtap="toPassword">NICEBOT的房间</text>
+    </view>
+
+    <view class="sbBar4">
+    <image src="/static/image/Room3.png"></image>
+    <text catchtap="toPassword">只有红茶可以吗的房间</text>
+    </view>
+
+
+
+
+
 </view>
 <bottomIcon/>

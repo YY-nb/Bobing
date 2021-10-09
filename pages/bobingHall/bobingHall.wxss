@@ -1,1 +1,109 @@
 /* pages/bobingHall/bobingHall.wxss */
+.searchBar1 {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: 60rpx;
+    width: 650rpx;
+    top: 10rpx;
+    z-index: 2;
+    position: absolute;
+  }
+  
+  .searchBar1 image{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 32rpx;
+    width: 24rpx;
+    left: 600rpx;
+    top: 15rpx;
+    z-index: 2;
+  }
+
+  .sbBar2{
+    height: 125rpx;
+    align-items: center;
+    width: 650rpx;
+    top: 80rpx;
+    position: absolute;
+    align-items: center;
+    z-index: 1;
+}
+.sbBar2 image{
+    height: 125rpx;
+    align-items: center;
+    width: 650rpx;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
+}
+
+.sbBar2 text {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 45rpx;
+    left: 390rpx;
+    font-size: 30rpx;
+    z-index: 3;
+}
+
+.sbBar3{
+    height: 125rpx;
+    align-items: center;
+    width: 650rpx;
+    top: 215rpx;
+    position: absolute;
+    align-items: center;
+    z-index: 1;
+}
+.sbBar3 image{
+    height: 125rpx;
+    align-items: center;
+    width: 650rpx;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
+}
+
+.sbBar3 text {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 45rpx;
+    left: 370rpx;
+    font-size: 30rpx;
+    z-index: 3;
+}
+
+.sbBar4{
+    height: 125rpx;
+    align-items: center;
+    width: 650rpx;
+    top: 350rpx;
+    position: absolute;
+    align-items: center;
+    z-index: 1;
+}
+.sbBar4 image{
+    height: 125rpx;
+    align-items: center;
+    width: 650rpx;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
+}
+
+.sbBar4 text {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 45rpx;
+    left: 330rpx;
+    font-size: 30rpx;
+    z-index: 3;
+}

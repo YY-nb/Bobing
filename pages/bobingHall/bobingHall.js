@@ -18,6 +18,11 @@ Component({
      * 组件的方法列表
      */
     methods: {
+        toPassword(){
+            wx.navigateTo({
+              url: '/pages/password/password',
+            })
+        }
 
     }
 })

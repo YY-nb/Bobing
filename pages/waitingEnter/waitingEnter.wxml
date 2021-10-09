@@ -1,0 +1,9 @@
+<!--pages/waitingEnter/waitingEnter.wxml-->
+<view class="waitingIcon">
+<image src="/static/image/loading.gif"></image>
+<text>正在接入房间服务器</text>
+</view>
+<view class="container">   
+   <image class="background" src="/static/image/background.png"></image> 
+</view>
+<bottomIcon/>

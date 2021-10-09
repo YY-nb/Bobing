@@ -1,8 +1,10 @@
 <!--pages/createRoom/createRoom.wxml-->
 
 <view class="container">
-    <create class="searchBar1" placeholder-style="font-size:15px" placeholder="请输入房间名称"/>
-    <create class="searchBar2" placeholder-style="font-size:15px" placeholder="请输入房间密码"/>
+
+
+    <input class="searchBar1" placeholder-style="font-size:15px" placeholder="请输入房间名称" bindinput="bindKeyInput"/>
+    <input class="searchBar2" placeholder-style="font-size:15px" placeholder="请输入房间密码" bindinput="bindKeyInput"/>
 
 
 <view class="sbBar" catchtap="toWaitingRoom">
