@@ -1,6 +1,6 @@
 // pages/singleGame/singleGame.js
 var clickTime=0;
-var allDiceList=[]; //所有人的结果列表
+var results=[];//所有人的结果列表
 Page({
     data: {
         resultList:[0,0,0,0,0,0,0], //博饼后所有骰子的结果，如[0]代表点数1有几个
@@ -52,8 +52,8 @@ Page({
                 })
             }
             else{ //博完
-                
-                this.showRank();
+                var result={rank:"",allDiceList:[]}; //一个人的结果列表
+                this.showRank(result);
                 this.setData({
                     isBobingOver:true,
                     buttonText:"博",
@@ -65,7 +65,7 @@ Page({
                 
             }  
         },
-        randomList(){
+        randomList(result){
             var tempList=[];
             for(var i=0;i<6;i++){
                 var num=Math.floor(Math.random() * 6) + 1; //随机1~6
@@ -95,11 +95,11 @@ Page({
                 displayList:tempList
             })
             //将结果存到本地存储中
-            allDiceList.push(this.data.displayList);
-            wx.setStorageSync('allDiceList', allDiceList);
+            result.allDiceList=this.data.displayList;
+            
         },
-        showRank(){
-            this.randomList();
+        showRank(result){
+            this.randomList(result);
             if(this.data.resultList[4]==3&&this.data.resultList[2]==2){
                 this.setData({
                     rank:"状元：状元插金花"
@@ -162,10 +162,11 @@ Page({
                     rank:"再接再厉~"
                 })
             }
+            result.rank=this.data.rank;
             console.log(this.data.rank);
             console.log(this.data.resultList);
-            
-            
+            results.push(result);
+            wx.setStorageSync('results', results);
         },
         continueClick(){
              this.setData({
@@ -179,9 +180,9 @@ Page({
                  isBobingOver:false,
                  currentPlayerNum:this.data.playerNum
             })
-            //清除list缓存
-            allDiceList=[];
-            wx.removeStorageSync("allDiceList");
+            //清除results缓存
+            results=[];
+            wx.removeStorageSync("results");
             console.log("新的一局，人数为： ",this.data.currentPlayerNum);        
         },
         returnBack(){

@@ -1,0 +1,5 @@
+<!--pages/rule/rule.wxml-->
+<view class="ruleIcon">
+    <image  src="/static/image/ruleText.png"></image>
+    <text >查看规则</text>
+</view>

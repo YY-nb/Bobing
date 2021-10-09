@@ -1,5 +1,14 @@
 <!--pages/rule/rule.wxml-->
 <view class="ruleIcon">
     <image  src="/static/image/ruleText.png"></image>
-    <text >查看规则</text>
+    <view class="ruleIconAppear">
+        <van-cell label="查看\n规则" is-link bind:click="showPopup">
+        </van-cell>
+    </view>
+</view>
+
+<view class="ruleIconPopup">
+<van-popup show="{{show}}" bind:close="onClose">
+    <image src="/static/image/rule.png"></image>
+</van-popup>
 </view>

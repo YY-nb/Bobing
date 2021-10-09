@@ -2,10 +2,11 @@
 <view class="container">
     <image class="background" src="/static/image/background.png"></image> 
     <view class="allDiceList">
-        <view  wx:for="{{allDiceList}}">
+        <view  wx:for="{{results}}">
             <view class="diceList">
                 <text decode="{{true}} ">玩家{{index+1}}:&nbsp;</text>
-                <image wx:for="{{item}}" wx:for-item="picture" src="{{picture}}"></image>
+                <text class="rank">({{item.rank}})</text>
+                <image wx:for="{{item.allDiceList}}" wx:for-item="picture" src="{{picture}}"></image>
             </view>
         </view>
     </view>

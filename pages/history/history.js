@@ -5,17 +5,17 @@ Page({
      * 页面的初始数据
      */
     data: {
-        allDiceList:[]
+        results:[]
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        let list=wx.getStorageSync('allDiceList');
+        let list=wx.getStorageSync('results');
         if(list){
             this.setData({
-                allDiceList:list
+                results:list
             })
         }
         
@@ -69,5 +69,5 @@ Page({
     onShareAppMessage: function () {
 
     },
-    
+
 })

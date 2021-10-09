@@ -7,8 +7,8 @@
     top:2%;
     left: 87%;
     position: absolute;
-    
   }
+
   .ruleIcon image{
     display: flex;
     position: absolute;
@@ -16,10 +16,45 @@
     width: 50rpx;
     height:50rpx;
   }
-  .ruleIcon text{
+  
+  .ruleIconAppear{
     display: flex;
+    flex-direction: column;
+    width: 80rpx;
+    height:20rpx;
+    top:2%;
+    left: 10%;
     position: absolute;
-    top:64%;
-    font-size: 19rpx;
-    text-align: center;
+    z-index: 3;
   }
+  .ruleIconAppear text{
+    display: flex;
+    flex-direction: column;
+    width: 80rpx;
+    height:20rpx;
+    top:2%;
+    left: 10%;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .ruleIconPopup{
+    display: flex;
+    flex-direction: column;
+    width: 750rpx;
+    height: 750rpx;
+    position: absolute;
+  }
+  .ruleIconPopup image{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 4;
+    left: 40rpx;
+    height: 1000rpx;
+  }
+
+
+  
+
+
