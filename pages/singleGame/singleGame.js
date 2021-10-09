@@ -99,7 +99,7 @@ Page({
         },
         showRank(result){
             this.randomList(result);
-            if(this.data.resultList[4]==3&&this.data.resultList[2]==2){
+            if(this.data.resultList[4]==4&&this.data.resultList[1]==2){
                 this.setData({
                     rank:"状元插金花"
                 })
