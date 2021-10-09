@@ -5,7 +5,7 @@
         <view  wx:for="{{results}}">
             <view class="diceList">
                 <text decode="{{true}} ">玩家{{index+1}}:&nbsp;</text>
-                <text class="rank">({{item.rank}})</text>
+                <text class="rank">{{item.rank}}</text>
                 <image wx:for="{{item.allDiceList}}" wx:for-item="picture" src="{{picture}}"></image>
             </view>
         </view>

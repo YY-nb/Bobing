@@ -4,8 +4,7 @@ var results=[];//所有人的结果列表
 Page({
     data: {
         resultList:[0,0,0,0,0,0,0], //博饼后所有骰子的结果，如[0]代表点数1有几个
-        displayList:[6], //存放最后显示的图片
-        
+        displayList:[6], //存放最后显示的图片       
         rank:"", //骰子判定结果
         dices:[
             "/static/image/diceGif.gif",
@@ -16,9 +15,9 @@ Page({
             "/static/image/shaizi5.png",
             "/static/image/shaizi6.png"
         ], //存储图片路径
+        currentButton:"/static/image/Bo.png" ,
         bowlPicture:"/static/image/bobingPic.png", //碗的路径
         animation:"", //gif
-        buttonText:"博",
         isBobingOver:false,
         currentPlayerNum: "",
         playerNum:"",
@@ -32,7 +31,7 @@ Page({
                 currentPlayerNum:num,
                 playerNum:num
             })          
-            console.log("玩家人数是：",num);
+            
            }
           
         },
@@ -45,11 +44,10 @@ Page({
             if(clickTime%2==1){    
                          
                 this.setData({
-                    buttonText:"停",
+                    
                     animation:this.data.dices[0],
                     bowlPicture:"",
-                  //  rank:"",
-                  //  displayList:[0,0,0,0,0,0]
+                    currentButton: "/static/image/Ting.png"
                 })
             }
             else{ //博完
@@ -57,7 +55,7 @@ Page({
                 this.showRank(result);
                 this.setData({
                     isBobingOver:true,
-                    buttonText:"博",
+                    currentButton: "/static/image/Bo.png",
                     animation:"",
                     bowlPicture:"/static/image/bobingPic.png",
                     resultList:[0,0,0,0,0,0,0],
@@ -103,7 +101,7 @@ Page({
             this.randomList(result);
             if(this.data.resultList[4]==3&&this.data.resultList[2]==2){
                 this.setData({
-                    rank:"状元：状元插金花"
+                    rank:"状元插金花"
                 })
             }
             else if(this.data.resultList[4]==6){
