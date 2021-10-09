@@ -1,0 +1,17 @@
+<!--pages/enterSingleGame/enterSingleGame.wxml-->
+
+<view class="container">
+    <input class="searchBar1" placeholder-style="font-size:15px" placeholder="请输入博饼人数" bindinput="bindKeyInput"/>
+    <nevigate url="/pages/singleGame/singleGame"></nevigate>
+
+<view class="sbBar" catchtap="toSingleGame">
+    <text>确定</text>
+
+</view>
+    <image class="background" src="/static/image/background.png"></image> 
+</view>
+
+<bottomIcon/>
+
+
+

@@ -19,7 +19,7 @@ Component({
      */
     methods: {
         toMyInfo(){
-            wx.navigateTo({
+            wx.redirectTo({
               url: '/pages/myInfo/myInfo',
             })
           },

@@ -2,17 +2,7 @@
 var clickTime=0;
 var playerNum=2;
 var currentPlayerNum=playerNum;
-Component({
-    /**
-     * 组件的属性列表
-     */
-    properties: {
-
-    },
-
-    /**
-     * 组件的初始数据
-     */
+Page({
     data: {
         resultList:[0,0,0,0,0,0,0], //博饼后所有骰子的结果，如[0]代表点数1有几个
         displayList:[6], //存放最后显示的图片
@@ -34,10 +24,8 @@ Component({
         nextButton:""
     },
 
-    /**
-     * 组件的方法列表
-     */
-    methods: {
+    
+        
         startClick(){
            
             clickTime%=2;
@@ -53,13 +41,15 @@ Component({
             }
             else{ //博完
                 currentPlayerNum--;
+                console.log(this.data.currentNum);  
                 this.showRank();
                 this.setData({
                     isBobingOver:true,
                     buttonText:"博",
                     animation:"",
                     bowlPicture:"/static/image/bobingPic.png",
-                    resultList:[0,0,0,0,0,0,0]
+                    resultList:[0,0,0,0,0,0,0],
+                    
                 })
                 
             }  
@@ -168,7 +158,7 @@ Component({
                  isBobingOver:false,
                  currentNum:currentPlayerNum
             })
-            console.log(this.data.currentNum);       
+                
         },
         newClick(){ 
             this.setData({
@@ -183,5 +173,5 @@ Component({
                 url: '/pages/index/index',
               })
         }
-    }
+    
 })

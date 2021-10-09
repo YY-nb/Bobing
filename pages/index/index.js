@@ -27,7 +27,7 @@ Page({
   },
   toSingleGame(){
     wx.navigateTo({
-      url: '/pages/singleGame/singleGame',
+      url: '/pages/enterSingleGame/enterSingleGame',
     })
   },
   toBobingHall(){

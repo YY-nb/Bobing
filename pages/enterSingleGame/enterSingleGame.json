@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "bottomIcon":"/components/bottomIcon/bottomIcon",
+        "create":"/dist/search/index",
+        "field":"/dist/field/index"
+    }
+}
