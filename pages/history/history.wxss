@@ -1,1 +1,23 @@
 /* pages/history/history.wxss */
+.allDiceList{
+    display: flex;
+    position:absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.diceList{
+    background:rgb(242, 243, 206);
+    height:100rpx;
+    width: 750rpx;
+    flex-direction: row;
+}
+.diceList text{
+    
+   margin-top: 40rpx;
+   font-size: 35rpx;
+}
+.diceList image{
+    height: 90rpx;
+    width: 90rpx;
+}
