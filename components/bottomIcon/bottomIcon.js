@@ -27,6 +27,12 @@ Component({
             wx.reLaunch({
               url: '/pages/index/index',
             })
+            wx.clearStorageSync();
+          },
+          toHistory(){
+            wx.navigateTo({
+              url: '/pages/history/history',
+            })
           }
     }
 })

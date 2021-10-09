@@ -1,7 +1,9 @@
-<!--pages/history/history.wxml-->
+<!--pages/comingSoon/comingSoon.wxml-->
 <view class="container">
     <image class="background" src="/static/image/background.png"></image> 
-    <view class="allDiceList">
+    <view class="sbBar">
+    <image src="/static/image/comingSoon.png"></image>
     </view>
 </view>
+
 <bottomIcon/>

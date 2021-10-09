@@ -1,0 +1,15 @@
+/* pages/comingSoon/comingSoon.wxss */
+.sbBar{
+    height: 250rpx;
+    width: 750rpx;
+    top: 265rpx;
+    position: absolute;
+    z-index: 2;
+}
+.sbBar image{
+    height: 160rpx;
+    width: 450rpx;
+    left: 150rpx;
+    position: absolute;
+    z-index: 2;
+}

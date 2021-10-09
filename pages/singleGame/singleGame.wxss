@@ -12,6 +12,19 @@
     width: 200rpx;   
     border-radius: 50%;
 }
+.player{
+    display: flex;
+    position: absolute;
+    top:10%;
+    height: 100rpx;
+    width: 500rpx;
+}
+.player text{
+    display: flex;
+    position: absolute;
+    font-size: 40rpx;
+    left:35%;
+}
 .diceAnimation{
     display: flex;
     position: absolute;

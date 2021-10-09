@@ -1,21 +1,19 @@
 {
-  "pages":[
-    
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/myInfo/myInfo",
-    "pages/singleGame/singleGame",
-    "pages/bobingHall/bobingHall",
-    "pages/createRoom/createRoom",
-    "pages/history/history",
-    "pages/sample1/sample1"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "中秋博饼",
-    "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/myInfo/myInfo",
+        "pages/singleGame/singleGame",
+        "pages/bobingHall/bobingHall",
+        "pages/createRoom/createRoom",
+        "pages/history/history"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "中秋博饼",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }

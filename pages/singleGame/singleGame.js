@@ -1,11 +1,11 @@
 // pages/singleGame/singleGame.js
 var clickTime=0;
-var playerNum=2;
-var currentPlayerNum=playerNum;
+var allDiceList=[]; //所有人的结果列表
 Page({
     data: {
         resultList:[0,0,0,0,0,0,0], //博饼后所有骰子的结果，如[0]代表点数1有几个
         displayList:[6], //存放最后显示的图片
+        
         rank:"", //骰子判定结果
         dices:[
             "/static/image/diceGif.gif",
@@ -20,17 +20,29 @@ Page({
         animation:"", //gif
         buttonText:"博",
         isBobingOver:false,
-        currentNum: playerNum,
+        currentPlayerNum: "",
+        playerNum:"",
         nextButton:""
     },
-
+        onLoad(){
+           let num=wx.getStorageSync('playerNum');
+           if(num){
+            this.setData({
+                currentPlayerNum:num,
+                playerNum:num
+            })          
+            console.log("玩家人数是：",num);
+           }
+          
+        },
     
         
         startClick(){
            
             clickTime%=2;
             clickTime++;
-            if(clickTime%2==1){                
+            if(clickTime%2==1){    
+                         
                 this.setData({
                     buttonText:"停",
                     animation:this.data.dices[0],
@@ -40,8 +52,7 @@ Page({
                 })
             }
             else{ //博完
-                currentPlayerNum--;
-                console.log(this.data.currentNum);  
+                
                 this.showRank();
                 this.setData({
                     isBobingOver:true,
@@ -83,6 +94,9 @@ Page({
             this.setData({
                 displayList:tempList
             })
+            //将结果存到本地存储中
+            allDiceList.push(this.data.displayList);
+            wx.setStorageSync('allDiceList', allDiceList);
         },
         showRank(){
             this.randomList();
@@ -156,22 +170,25 @@ Page({
         continueClick(){
              this.setData({
                  isBobingOver:false,
-                 currentNum:currentPlayerNum
+                 currentPlayerNum: --this.data.currentPlayerNum
             })
                 
         },
         newClick(){ 
             this.setData({
                  isBobingOver:false,
-                 currentNum:playerNum
+                 currentPlayerNum:this.data.playerNum
             })
-            currentPlayerNum=playerNum;
-            console.log(this.data.currentNum);        
+            //清除list缓存
+            allDiceList=[];
+            wx.removeStorageSync("allDiceList");
+            console.log("新的一局，人数为： ",this.data.currentPlayerNum);        
         },
         returnBack(){
             wx.reLaunch({
                 url: '/pages/index/index',
               })
+            wx.clearStorageSync();
         }
     
 })

@@ -1,24 +1,18 @@
-// pages/history/history.js
+// pages/comingSoon/comingSoon.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        allDiceList:[]
+
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        let list=wx.getStorageSync('allDiceList');
-        if(list){
-            this.setData({
-                allDiceList:list
-            })
-        }
-        
+
     },
 
     /**
